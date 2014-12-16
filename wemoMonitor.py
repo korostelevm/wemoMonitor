@@ -31,11 +31,6 @@ def mainloop(name):
         if matches(sender.name):
             print "Found device:", sender.name
 
-#     @receiver(statechange)
-#     def motion(sender, **kwargs):
-#         if matches(sender.name):
-#             print "{} state is {state}".format(
-#                 sender.name, state="on" if kwargs.get('state') else "off")
             while 1:
                 print_some_times(sender)
 
